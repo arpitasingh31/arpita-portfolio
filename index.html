@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Arpita Singh | Portfolio</title>
+    <title>Adiiii | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       html {
@@ -16,11 +16,24 @@
   </head>
   <body class="bg-gray-950 text-white">
 
+    <!-- Header/Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-gray-900/80 backdrop-blur-md shadow-md">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-blue-400">Adiiii</h1>
+        <nav class="space-x-6 hidden md:block">
+          <a href="#home" class="text-gray-300 hover:text-blue-400 transition">Home</a>
+          <a href="#about" class="text-gray-300 hover:text-blue-400 transition">About</a>
+          <a href="#projects" class="text-gray-300 hover:text-blue-400 transition">Projects</a>
+          <a href="#contact" class="text-gray-300 hover:text-blue-400 transition">Contact</a>
+        </nav>
+      </div>
+    </header>
+
     <!-- Hero Section -->
-    <section class="h-screen bg-cover bg-center relative" style="background-image: url('images/hero-bg.jpg');">
+    <section id="home" class="h-screen bg-cover bg-center relative pt-24" style="background-image: url('images/hero-bg.jpg');">
       <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/90 flex items-center justify-center">
         <div class="text-center px-4">
-          <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-blue-400">Arpita Singh</span> 👋</h1>
+          <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-blue-400">Adiiii</span> 👋</h1>
           <p class="text-xl text-gray-300">MERN Stack Developer | GATE Aspirant</p>
           <a href="#projects" class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-semibold transition">View Projects</a>
         </div>
@@ -28,7 +41,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="py-20 px-6 text-center bg-gray-900" id="about">
+    <section id="about" class="py-20 px-6 text-center bg-gray-900">
       <h2 class="text-4xl font-semibold mb-6">About Me</h2>
       <p class="max-w-3xl mx-auto text-lg text-gray-300">
         Passionate developer building full-stack web apps with modern technologies.
@@ -37,7 +50,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="py-20 px-6 bg-gray-800" id="projects">
+    <section id="projects" class="py-20 px-6 bg-gray-800">
       <div class="max-w-6xl mx-auto">
         <h2 class="text-4xl text-center font-semibold mb-12">Projects</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -70,7 +83,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="py-20 px-6 text-center bg-gray-950" id="contact">
+    <section id="contact" class="py-20 px-6 text-center bg-gray-950">
       <h2 class="text-4xl font-semibold mb-6">Contact Me</h2>
       <p class="text-lg text-gray-400 mb-6">Let's collaborate or discuss an idea.</p>
       <a
@@ -83,7 +96,7 @@
 
     <!-- Footer -->
     <footer class="py-6 text-center text-sm text-gray-500 bg-gray-900">
-      © 2025 Arpita Singh 
+      © 2025 Adiiii • MERN Stack Developer • Built with 💙 using Tailwind CSS
     </footer>
 
   </body>
