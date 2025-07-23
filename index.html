@@ -7,11 +7,12 @@
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- AOS Scroll Animations -->
+
+  <!-- AOS Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Typed.js -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
   <script>
@@ -26,12 +27,19 @@
           }
         }
       }
-    }
+    };
   </script>
 
   <style>
     html { scroll-behavior: smooth; }
     body { background-color: #000000; }
+    @keyframes bounce-slow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    .animate-bounce-slow {
+      animation: bounce-slow 4s infinite;
+    }
   </style>
 </head>
 <body class="font-inter text-white">
@@ -51,8 +59,6 @@
   <!-- Hero Section -->
   <section class="text-center py-24 bg-black">
     <img src="Passport_Photo.png" alt="Arpita Singh" class="mx-auto w-32 h-32 rounded-full border-4 border-purple-500 shadow-lg mb-4 animate-bounce-slow">
-
-
     <h2 class="text-4xl font-bold mb-2">Hi, I'm <span class="text-purple-400">Arpita 👩‍💻</span></h2>
     <p class="text-lg max-w-xl mx-auto mb-4">
       <span id="typing-text"></span>
@@ -124,7 +130,7 @@
     AOS.init();
     new Typed('#typing-text', {
       strings: [
-        "A Full Stack Developer (.NET / MERN)",
+        "a Full Stack Developer (.NET / MERN)",
         "skilled in Django, Spring Boot, React",
         "focused on secure cloud solutions",
         "ready to build great software!"
