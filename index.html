@@ -5,54 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arpita Singh | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .transition-hover {
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
 
   <!-- Header -->
-  <header class="p-4 flex justify-between items-center bg-white shadow">
-    <h1 class="text-xl font-bold">Arpita Singh</h1>
+  <header class="p-4 flex justify-between items-center bg-white shadow sticky top-0 z-50">
+    <h1 class="text-xl font-bold text-indigo-700 hover:scale-105 transition-transform">Arpita Singh</h1>
     <nav class="space-x-4">
-      <a href="#skills" class="hover:text-blue-600">Skills</a>
-      <a href="#projects" class="hover:text-blue-600">Projects</a>
-      <a href="#contact" class="hover:text-blue-600">Contact</a>
+      <a href="#skills" class="hover:text-indigo-600 font-medium transition-hover">Skills</a>
+      <a href="#projects" class="hover:text-indigo-600 font-medium transition-hover">Projects</a>
+      <a href="#contact" class="hover:text-indigo-600 font-medium transition-hover">Contact</a>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="text-center py-20 bg-gradient-to-r from-blue-100 to-purple-100">
-    <h2 class="text-4xl font-bold mb-4">Hi, I'm Arpita Singh</h2>
-    <p class="text-lg max-w-2xl mx-auto">Computer Science undergrad with expertise in Java, Python, Full-Stack Development (.NET, Django, MERN), and passion for tech innovation.</p>
+    <h2 class="text-4xl font-bold mb-4 text-indigo-800">Hi, I'm Arpita Singh</h2>
+    <p class="text-lg max-w-2xl mx-auto text-gray-700">Computer Science undergrad with expertise in Java, Python, Full-Stack Development (.NET, Django, MERN), and passion for tech innovation.</p>
     <div class="mt-6 space-x-4">
-      <a href="https://github.com/arpitasingh31" class="text-blue-600 font-semibold">GitHub</a>
-      <a href="https://www.linkedin.com/in/arpita-singh-932545202/" class="text-blue-600 font-semibold">LinkedIn</a>
+      <a href="https://github.com/arpitasingh31" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded transition-hover">GitHub</a>
+      <a href="https://www.linkedin.com/in/arpita-singh-932545202/" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-hover">LinkedIn</a>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="py-12 px-6 bg-white">
-    <h3 class="text-2xl font-bold mb-6 text-center">Technical Skills</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="bg-gray-100 p-4 rounded-xl shadow">
-        <h4 class="font-semibold mb-2 text-blue-700">Languages</h4>
-        <ul class="list-disc list-inside space-y-1">
+  <section id="skills" class="py-16 px-6 bg-white">
+    <h3 class="text-3xl font-bold mb-8 text-center text-indigo-800">Technical Skills</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-gray-100 p-6 rounded-2xl shadow hover:shadow-lg transition-hover transform hover:-translate-y-1">
+        <h4 class="font-semibold mb-3 text-indigo-700 text-lg">Languages</h4>
+        <ul class="list-disc list-inside space-y-1 text-gray-700">
           <li>Java</li><li>Python</li><li>C#</li><li>C</li><li>JavaScript</li>
         </ul>
       </div>
-      <div class="bg-gray-100 p-4 rounded-xl shadow">
-        <h4 class="font-semibold mb-2 text-blue-700">Frameworks & Libraries</h4>
-        <ul class="list-disc list-inside space-y-1">
+      <div class="bg-gray-100 p-6 rounded-2xl shadow hover:shadow-lg transition-hover transform hover:-translate-y-1">
+        <h4 class="font-semibold mb-3 text-indigo-700 text-lg">Frameworks & Libraries</h4>
+        <ul class="list-disc list-inside space-y-1 text-gray-700">
           <li>.NET</li><li>Django</li><li>React.js</li><li>MERN</li><li>Spring Boot</li><li>ASP.NET Core</li>
         </ul>
       </div>
-      <div class="bg-gray-100 p-4 rounded-xl shadow">
-        <h4 class="font-semibold mb-2 text-blue-700">Database & Cloud</h4>
-        <ul class="list-disc list-inside space-y-1">
+      <div class="bg-gray-100 p-6 rounded-2xl shadow hover:shadow-lg transition-hover transform hover:-translate-y-1">
+        <h4 class="font-semibold mb-3 text-indigo-700 text-lg">Database & Cloud</h4>
+        <ul class="list-disc list-inside space-y-1 text-gray-700">
           <li>MySQL</li><li>Oracle</li><li>AWS</li><li>JWT</li><li>OAuth2.0</li>
         </ul>
       </div>
-      <div class="bg-gray-100 p-4 rounded-xl shadow">
-        <h4 class="font-semibold mb-2 text-blue-700">Tools & Concepts</h4>
-        <ul class="list-disc list-inside space-y-1">
+      <div class="bg-gray-100 p-6 rounded-2xl shadow hover:shadow-lg transition-hover transform hover:-translate-y-1">
+        <h4 class="font-semibold mb-3 text-indigo-700 text-lg">Tools & Concepts</h4>
+        <ul class="list-disc list-inside space-y-1 text-gray-700">
           <li>Git</li><li>GitHub</li><li>CI/CD</li><li>DSA</li><li>System Design</li>
         </ul>
       </div>
@@ -60,43 +65,42 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-12 px-6 bg-gray-50">
-    <h3 class="text-2xl font-bold mb-6 text-center">Projects</h3>
-    <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-2">
-      <div class="bg-white p-4 rounded-xl shadow hover:shadow-md">
-        <h4 class="font-semibold text-lg">Mail Archiver</h4>
-        <p class="text-sm text-gray-600 mb-2">.NET, C#, MySQL, HTML, CSS, JS</p>
-        <p class="text-sm mb-2">Secure email archiving system with encryption and multi-user support.</p>
-        <a href="https://github.com/arpitasingh31/Mail-Archiever.git" class="text-blue-600 text-sm font-semibold" target="_blank">View on GitHub</a>
+  <section id="projects" class="py-16 px-6 bg-gray-50">
+    <h3 class="text-3xl font-bold mb-8 text-center text-indigo-800">Projects</h3>
+    <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-2">
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-hover transform hover:-translate-y-1">
+        <h4 class="font-semibold text-xl mb-1 text-indigo-700">Mail Archiver</h4>
+        <p class="text-sm text-gray-600 mb-2 italic">.NET, C#, MySQL, HTML, CSS, JS</p>
+        <p class="text-sm mb-4">Secure email archiving system with encryption and multi-user support.</p>
+        <a href="https://github.com/arpitasingh31/Mail-Archiever.git" class="text-indigo-600 font-semibold text-sm hover:underline" target="_blank">View on GitHub</a>
       </div>
-      <div class="bg-white p-4 rounded-xl shadow hover:shadow-md">
-        <h4 class="font-semibold text-lg">Blogsite</h4>
-        <p class="text-sm text-gray-600 mb-2">Django, HTML, CSS, JS, MySQL</p>
-        <p class="text-sm mb-2">Dynamic blog site with full authentication and content management.</p>
-        <a href="https://github.com/arpitasingh31/Responsive-Blogsite-" class="text-blue-600 text-sm font-semibold" target="_blank">View on GitHub</a>
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-hover transform hover:-translate-y-1">
+        <h4 class="font-semibold text-xl mb-1 text-indigo-700">Blogsite</h4>
+        <p class="text-sm text-gray-600 mb-2 italic">Django, HTML, CSS, JS, MySQL</p>
+        <p class="text-sm mb-4">Dynamic blog site with full authentication and content management.</p>
+        <a href="https://github.com/arpitasingh31/Responsive-Blogsite-" class="text-indigo-600 font-semibold text-sm hover:underline" target="_blank">View on GitHub</a>
       </div>
-      <div class="bg-white p-4 rounded-xl shadow hover:shadow-md">
-        <h4 class="font-semibold text-lg">Phishing Website Detection</h4>
-        <p class="text-sm text-gray-600 mb-2">Python, ML, Flask</p>
-        <p class="text-sm mb-2">Real-time phishing detection using machine learning models.</p>
-        <a href="https://github.com/arpitasingh31/Phishing-Web-Sites-Detection-.git" class="text-blue-600 text-sm font-semibold" target="_blank">View on GitHub</a>
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-hover transform hover:-translate-y-1">
+        <h4 class="font-semibold text-xl mb-1 text-indigo-700">Phishing Website Detection</h4>
+        <p class="text-sm text-gray-600 mb-2 italic">Python, ML, Flask</p>
+        <p class="text-sm mb-4">Real-time phishing detection using machine learning models.</p>
+        <a href="https://github.com/arpitasingh31/Phishing-Web-Sites-Detection-.git" class="text-indigo-600 font-semibold text-sm hover:underline" target="_blank">View on GitHub</a>
       </div>
-      <div class="bg-white p-4 rounded-xl shadow hover:shadow-md">
-        <h4 class="font-semibold text-lg">EYE WEBINAR</h4>
-        <p class="text-sm text-gray-600 mb-2">MERN, WebRTC, AWS</p>
-        <p class="text-sm mb-2">Video conferencing app with chat and screen sharing.</p>
-        <a href="#" class="text-blue-600 text-sm font-semibold">Details coming soon</a>
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-hover transform hover:-translate-y-1">
+        <h4 class="font-semibold text-xl mb-1 text-indigo-700">EYE WEBINAR</h4>
+        <p class="text-sm text-gray-600 mb-2 italic">MERN, WebRTC, AWS</p>
+        <p class="text-sm mb-4">Video conferencing app with chat and screen sharing.</p>
+        <a href="#" class="text-indigo-600 font-semibold text-sm hover:underline">Details coming soon</a>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-12 px-6 bg-white text-center">
-    <h3 class="text-2xl font-bold mb-4">Contact</h3>
-    <p>Email: <a href="mailto:arpitasi3332@gmail.com" class="text-blue-600">arpitasi3332@gmail.com</a></p>
-    <p>Phone: +91-95546-82098</p>
+  <section id="contact" class="py-16 px-6 bg-white text-center">
+    <h3 class="text-3xl font-bold mb-6 text-indigo-800">Contact</h3>
+    <p class="text-lg mb-2">Email: <a href="mailto:arpitasi3332@gmail.com" class="text-indigo-600 hover:underline">arpitasi3332@gmail.com</a></p>
+    <p class="text-lg">Phone: <span class="text-indigo-600">+91-95546-82098</span></p>
   </section>
 
 </body>
 </html>
-
