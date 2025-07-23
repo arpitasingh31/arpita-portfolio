@@ -1,83 +1,79 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arpita Singh | Full Stack Developer</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Arpita Singh | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gradient-to-br from-purple-100 via-white to-blue-100 text-gray-800 font-sans">
   <!-- Header -->
-  <header class="bg-white shadow p-6">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Arpita Singh</h1>
-      <p class="text-sm">Full Stack Developer | MERN | Java | Python</p>
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-purple-600">Arpita Singh</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:text-purple-500">About</a>
+        <a href="#projects" class="hover:text-purple-500">Projects</a>
+        <a href="#contact" class="hover:text-purple-500">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="text-center py-16 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
-    <h2 class="text-4xl font-bold mb-4">Hi, I'm Arpita 👋</h2>
-    <p class="text-lg">Passionate CSE student building full-stack solutions</p>
+  <!-- Hero -->
+  <section class="text-center py-20 bg-gradient-to-r from-purple-200 to-blue-200">
+    <h2 class="text-4xl font-bold mb-4">Hi, I'm Arpita 👩‍💻</h2>
+    <p class="text-lg max-w-2xl mx-auto">UI/UX Designer & Full Stack Developer passionate about building web apps with clean, user-focused designs.</p>
+    <a href="#projects" class="mt-6 inline-block bg-purple-600 text-white px-6 py-3 rounded-lg shadow hover:bg-purple-700 transition">View Projects</a>
   </section>
 
-  <!-- About Section -->
-  <section class="py-12 px-4 md:px-12">
-    <h3 class="text-2xl font-semibold mb-4">About Me</h3>
-    <p>
-      I’m a passionate Computer Science student and aspiring full-stack developer skilled in MERN, Java, Python, and DSA.
-      I love building real-world solutions and am open to opportunities in web development and backend engineering.
-    </p>
+  <!-- About -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-6">About Me</h3>
+      <p class="text-center text-lg leading-relaxed">
+        I'm a passionate software developer experienced in PHP, MySQL, HTML, and JavaScript. I've built multiple projects including a Hotel Management System and a Blog Website. I love creating clean UIs and ensuring responsive, intuitive design across all devices.
+      </p>
+    </div>
   </section>
 
-  <!-- Skills Section -->
-  <section class="bg-gray-100 py-12 px-4 md:px-12">
-    <h3 class="text-2xl font-semibold mb-4">Skills</h3>
-    <ul class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <li>JavaScript</li>
-      <li>React.js</li>
-      <li>Node.js</li>
-      <li>MongoDB</li>
-      <li>Java</li>
-      <li>Python</li>
-      <li>MySQL</li>
-      <li>HTML/CSS</li>
-    </ul>
+  <!-- Projects -->
+  <section id="projects" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10">Projects</h3>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Project 1 -->
+        <div class="bg-white rounded-xl shadow-md p-6">
+          <h4 class="text-xl font-semibold mb-2">Hotel Management System</h4>
+          <p class="text-sm text-gray-600">Built with PHP & MySQL — includes admin login, room availability, booking, and invoice generation.</p>
+        </div>
+        <!-- Project 2 -->
+        <div class="bg-white rounded-xl shadow-md p-6">
+          <h4 class="text-xl font-semibold mb-2">Blog Website</h4>
+          <p class="text-sm text-gray-600">Developed a responsive blog site with post creation, user login, and comment features.</p>
+        </div>
+        <!-- Add more as needed -->
+      </div>
+    </div>
   </section>
 
-  <!-- Projects Section -->
-  <section class="py-12 px-4 md:px-12">
-    <h3 class="text-2xl font-semibold mb-4">Projects</h3>
-    <ul class="space-y-4">
-      <li>
-        <strong>Hotel Management</strong> - A full-stack ASP.NET hotel management system. [<a href="https://github.com/arpitasingh31/Hotel-Management" class="text-blue-600 underline">GitHub</a>]
-      </li>
-      <li>
-        <strong>Responsive Blogsite</strong> - Blog system using PHP, CSS, and JS. [<a href="https://github.com/arpitasingh31/Responsive-Blogsite-" class="text-blue-600 underline">GitHub</a>]
-      </li>
-      <li>
-        <strong>Mail Archiever</strong> - Archive and organize emails using PHP. [<a href="https://github.com/arpitasingh31/Mail-Archiever" class="text-blue-600 underline">GitHub</a>]
-      </li>
-      <li>
-        <strong>Portfolio Website</strong> - Hosted via GitHub Pages. [<a href="https://arpitasingh31.github.io/" class="text-blue-600 underline">Live</a>]
-      </li>
-    </ul>
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6">Let's Connect</h3>
+      <p class="mb-4">Feel free to reach out for collaborations or freelance opportunities!</p>
+      <a href="mailto:your.email@example.com" class="inline-block bg-blue-500 text-white px-5 py-3 rounded-lg hover:bg-blue-600 transition">Email Me</a>
+    </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="bg-gray-100 py-12 px-4 md:px-12">
-    <h3 class="text-2xl font-semibold mb-4">Contact</h3>
-    <p>Email: <a href="mailto:arpitasi3332@gmail.com" class="text-blue-600 underline">arpitasi3332@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/arpita-singh-932545202" class="text-blue-600 underline">linkedin.com/in/arpita-singh</a></p>
-    <p>GitHub: <a href="https://github.com/arpitasingh31" class="text-blue-600 underline">github.com/arpitasingh31</a></p>
-  </section>
-
-  <footer class="bg-white text-center py-4 text-sm mt-12">
-    © 2025 Arpita Singh. All rights reserved.
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-10">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p>© 2025 Arpita Singh. All rights reserved.</p>
+      <div class="mt-2 space-x-4">
+        <a href="https://github.com/your-username" class="hover:text-purple-400">GitHub</a>
+        <a href="https://linkedin.com/in/your-profile" class="hover:text-purple-400">LinkedIn</a>
+      </div>
+    </div>
   </footer>
 </body>
-
 </html>
